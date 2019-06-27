@@ -1,6 +1,6 @@
 package com.launcher.simulator.vehicles;
 
-import com.launcher.simulator.WeatherTower;
+import com.launcher.weather.WeatherTower;
 
 public interface Flyable {
     void updateConditions();

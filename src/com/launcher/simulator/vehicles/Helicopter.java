@@ -1,6 +1,6 @@
 package com.launcher.simulator.vehicles;
 
-import com.launcher.simulator.WeatherTower;
+import com.launcher.weather.WeatherTower;
 //import com.launcher.simulator.vehicles.Flyable;
 
 public class Helicopter extends Aircraft implements Flyable {
