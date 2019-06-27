@@ -12,7 +12,6 @@ public class WeatherProvider {
     private String[] weather = {"RAIN", "FOG", "SUN", "SNOW"};
 
     private WeatherProvider() {
-
     }
 
     public static WeatherProvider getProvider() {
@@ -22,11 +21,12 @@ public class WeatherProvider {
 
     public String getCurrentWeather(Coordinates coordinates) {
         //random number between 0-3
+        int n = weather.length;
         Random rand = new Random();
-        int n = rand.nextInt(3);
+        int randomIndex = rand.nextInt(n);
 
         //TODO take height into account
-        return (weather[n]);
+        return (weather[randomIndex]);
     }
 
 }

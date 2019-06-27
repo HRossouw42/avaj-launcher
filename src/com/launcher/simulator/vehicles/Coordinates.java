@@ -10,8 +10,14 @@ public class Coordinates {
         this.longitude = longitude;
         this.latitude = latitude;
 
-        //there's a minimum TODO
-        this.height = height;
+        //there's a minimum of 0-100 for height
+        if (height > 100) {
+            this.height = 100;
+        } else if (height < 0) {
+            this.height = 0;
+        } else {
+            this.height = height;
+        }
         return;
     }
 
