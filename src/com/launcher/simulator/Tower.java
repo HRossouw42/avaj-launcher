@@ -15,15 +15,19 @@ public class Tower {
     // ArrayList can not be used for primitive types, like int, char, etc. We need a wrapper class for such cases
     // https://www.geeksforgeeks.org/arraylist-in-java/
     private ArrayList<Flyable> observers = new ArrayList<Flyable>();
+    private ArrayList<Flyable> obscured = new ArrayList<Flyable>();
 
     public void register(Flyable flyable) {
         //TODO error check
         observers.add(flyable);
-        System.out.print(flyable + "is flying");
+        System.out.print(flyable + "is added to flying");
     }
 
     public void unregister(Flyable flyable) {
-        //TODO unregister flyables
+        //TODO error check
+        obscured.add(flyable);
+        System.out.print(flyable + "is added to obscured");
+
     }
 
     protected void conditionsChanged() {
@@ -39,8 +43,11 @@ public class Tower {
         for (Flyable flyable : observers) {
             System.out.print(flyable);
             flyable.updateConditions();
-            //TODO add unregister
+            // remove all elements found in a list from another list
+            // http://tutorials.jenkov.com/java-collections/list.html
         }
+        observers.removeAll(obscured);
+        System.out.print(obscured + "removed from flyables");
 
     }
 }
