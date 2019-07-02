@@ -6,10 +6,10 @@ import com.launcher.simulator.vehicles.Coordinates;
 public class WeatherTower extends Tower {
     public String getWeather(Coordinates coordinates) {
         //TODO return the weather
-        return ("Nice weather we're having");
+        return (WeatherProvider.getProvider().getCurrentWeather(coordinates));
     }
 
-    protected void changeWeather() {
-        //TODO change the weather
+    public void changeWeather() {
+        this.conditionsChanged();
     }
 }

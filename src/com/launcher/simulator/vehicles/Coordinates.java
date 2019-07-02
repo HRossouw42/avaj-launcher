@@ -18,6 +18,8 @@ public class Coordinates {
         } else {
             this.height = height;
         }
+        //TODO remove println
+        System.out.println("Coordinates: " + longitude + " " + latitude + " " + height);
         return;
     }
 

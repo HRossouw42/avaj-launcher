@@ -20,17 +20,18 @@ public class Tower {
     public void register(Flyable flyable) {
         //TODO error check
         observers.add(flyable);
-        System.out.print(flyable + "is added to flying");
+        System.out.println(flyable + " is added to flying");
     }
 
     public void unregister(Flyable flyable) {
         //TODO error check
         obscured.add(flyable);
-        System.out.print(flyable + "is added to obscured");
+        System.out.println(flyable + " is added to obscured");
 
     }
 
     protected void conditionsChanged() {
+        //TODO unhappy with this
          /*
          enhanced for loop - for(declaration : expression)
          Declaration − The newly declared block variable, is of a type compatible with the elements
@@ -47,7 +48,5 @@ public class Tower {
             // http://tutorials.jenkov.com/java-collections/list.html
         }
         observers.removeAll(obscured);
-        System.out.print(obscured + "removed from flyables");
-
     }
 }
