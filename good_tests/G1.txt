@@ -1,2 +1,4 @@
 5
 Baloon B1 2 3 20
+Baloon B2 10 15 100
+Baloon B2 12 16 -20

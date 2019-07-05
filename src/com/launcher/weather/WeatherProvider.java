@@ -26,6 +26,8 @@ public class WeatherProvider {
         int randomIndex = rand.nextInt(n);
 
         //TODO take height into account
+        System.out.println(coordinates);
+        System.out.println(weather[randomIndex]);
         return (weather[randomIndex]);
     }
 

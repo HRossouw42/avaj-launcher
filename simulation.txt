@@ -1,0 +1,40 @@
+
+Tower -> Baloon#B1(1) has registered to a weather tower.
+Tower -> Baloon#B2(2) has registered to a weather tower.
+Tower -> Baloon#B2(3) has registered to a weather tower.
+Simulation # 1
+Baloon#B1(1): Pack some shades boys, sun's out!
+Baloon#B2(2): Pack some shades boys, sun's out!
+Baloon#B2(3): RAIN! We're losing height!
+Tower -> Baloon#B2(3) has landed and unregistered.
+Simulation # 2
+Baloon#B1(1): Fiddlesticks. This damn fog makes flying hard.
+Baloon#B2(2): Fiddlesticks. This damn fog makes flying hard.
+Simulation # 3
+Baloon#B1(1): Fiddlesticks. This damn fog makes flying hard.
+Baloon#B2(2): RAIN! We're losing height!
+Simulation # 4
+Baloon#B1(1): Pack some shades boys, sun's out!
+Baloon#B2(2): Pack some shades boys, sun's out!
+Simulation # 5
+Baloon#B1(1): Pack some shades boys, sun's out!
+Baloon#B2(2): Pack some shades boys, sun's out!
+Tower -> Baloon#B1(1) has registered to a weather tower.
+Tower -> Baloon#B2(2) has registered to a weather tower.
+Tower -> Baloon#B2(3) has registered to a weather tower.
+Simulation # 1
+Baloon#B1(1): Winter has come!
+Baloon#B2(2): RAIN! We're losing height!
+Baloon#B2(3): Pack some shades boys, sun's out!
+Simulation # 2
+Baloon#B1(1): RAIN! We're losing height!
+Tower -> Baloon#B1(1) has landed and unregistered.
+Baloon#B2(2): Fiddlesticks. This damn fog makes flying hard.
+Baloon#B2(3): Winter has come!
+Tower -> Baloon#B2(3) has landed and unregistered.
+Simulation # 3
+Baloon#B2(2): Pack some shades boys, sun's out!
+Simulation # 4
+Baloon#B2(2): RAIN! We're losing height!
+Simulation # 5
+Baloon#B2(2): Pack some shades boys, sun's out!

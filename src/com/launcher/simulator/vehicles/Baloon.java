@@ -11,15 +11,20 @@ public class Baloon extends Aircraft implements Flyable {
     }
 
     public void updateConditions() {
-        String outRegister = "";
-        String outUnregister = "";
+        System.out.println("Balloon updated");
+        //setup empty strings
+        String shoutRegister = "";
+        String shoutUnregister = "";
 
 //    Baloon#B1(1): Let's enjoy the good weather and take some pics.
         String shout = "Baloon#" + this.name + "(" + this.id + "): ";
+        shoutRegister = "Tower -> Baloon#" + this.name + "(" + this.id + ") has registered to a weather tower.\n";
+        shoutUnregister = "Tower -> Baloon#" + this.name + "(" + this.id + ") has landed and unregistered.\n";
 
         String weather = weatherTower.getWeather(this.coordinates);
         weatherTower.register(this);
 
+        //TODO remove println
         System.out.println("Baloon" + this.name + " " + this.id);
         switch (weather) {
             case "RAIN":
@@ -27,7 +32,7 @@ public class Baloon extends Aircraft implements Flyable {
                         coordinates.getLongitude(),
                         coordinates.getLatitude(),
                         coordinates.getHeight() - 5);
-                outRegister = shout + "RAIN! We're losing height!\n";
+                shoutRegister = shout + "RAIN! We're losing height!\n";
                 break;
 
             case "SUN":
@@ -35,7 +40,7 @@ public class Baloon extends Aircraft implements Flyable {
                         coordinates.getLongitude() + 2,
                         coordinates.getLatitude(),
                         coordinates.getHeight() + 4);
-                outRegister = shout + "Pack some shades boys, sun's out!\n";
+                shoutRegister = shout + "Pack some shades boys, sun's out!\n";
                 break;
 
             case "FOG":
@@ -43,7 +48,7 @@ public class Baloon extends Aircraft implements Flyable {
                         coordinates.getLongitude(),
                         coordinates.getLatitude(),
                         coordinates.getHeight() - 3);
-                outRegister = shout + "Fiddlesticks. This damn fog makes flying hard.\n";
+                shoutRegister = shout + "Fiddlesticks. This damn fog makes flying hard.\n";
                 break;
 
             case "SNOW":
@@ -51,16 +56,29 @@ public class Baloon extends Aircraft implements Flyable {
                         coordinates.getLongitude(),
                         coordinates.getLatitude(),
                         coordinates.getHeight() - 15);
-                outRegister = shout + "Winter has come!\n";
+                shoutRegister = shout + "Winter has come!\n";
                 break;
 
         }
 
-//        weatherTower.printOut()
+        weatherTower.writeToFile("write", shoutRegister);
+
+        //when landing below 0 height, unregister
+        if (this.coordinates.getHeight() <= 0) {
+            weatherTower.writeToFile("write", shoutUnregister);
+            weatherTower.unregister(this);
+        }
+
+
     }
 
         public void registerTower (WeatherTower weatherTower){
             this.weatherTower = weatherTower;
+            String shoutRegister = "Tower -> Baloon#" + this.name + "(" + this.id + ") has registered to a weather tower.\n";
+
+            weatherTower.register(this);
+            weatherTower.writeToFile("write", shoutRegister);
+
 
         }
     }
