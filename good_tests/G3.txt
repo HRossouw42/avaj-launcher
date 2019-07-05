@@ -1,2 +1,0 @@
-5
-Helicopter H1 654 33 20
