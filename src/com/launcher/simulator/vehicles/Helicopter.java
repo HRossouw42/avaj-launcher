@@ -11,21 +11,18 @@ public class Helicopter extends Aircraft implements Flyable {
     }
 
     public void updateConditions() {
-        System.out.println("Helicopter updated");
         //setup empty strings
-        String shoutRegister = "";
-        String shoutUnregister = "";
+        String shoutRegister;
+        String shoutUnregister;
 
 //    Helicopter#B1(1): Let's enjoy the good weather and take some pics.
         String shout = "Helicopter#" + this.name + "(" + this.id + "): ";
         shoutRegister = "Tower -> Helicopter#" + this.name + "(" + this.id + ") has registered to a weather tower.\n";
-        shoutUnregister = "Tower -> Helicopter#" + this.name + "(" + this.id + ") has landed and unregistered.\n";
+        shoutUnregister = "Tower -> Helicopter#" + this.name + "(" + this.id + ") has landed and unregistered at coordinates:" + " LONG" + coordinates.getLongitude() + " LAT" + coordinates.getLatitude() +  "\n";
 
         String weather = weatherTower.getWeather(this.coordinates);
         weatherTower.register(this);
 
-        //TODO remove println
-        System.out.println("Helicopter" + this.name + " " + this.id);
         switch (weather) {
 
             case "SUN":

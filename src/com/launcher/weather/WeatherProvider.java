@@ -15,7 +15,6 @@ public class WeatherProvider {
     }
 
     public static WeatherProvider getProvider() {
-        //TODO why is this supposed to be static?
         return weatherProvider;
     }
 
@@ -25,9 +24,7 @@ public class WeatherProvider {
         Random rand = new Random();
         int randomIndex = rand.nextInt(n);
 
-        //TODO take height into account
-        System.out.println(coordinates);
-        System.out.println(weather[randomIndex]);
+//        System.out.println(weather[randomIndex]);
         return (weather[randomIndex]);
     }
 

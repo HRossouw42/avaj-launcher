@@ -4,10 +4,7 @@ import com.launcher.simulator.vehicles.AircraftFactory;
 import com.launcher.simulator.vehicles.Flyable;
 import com.launcher.weather.WeatherTower;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +13,7 @@ public class Simulator {
     private static WeatherTower weatherTower;
     private static List<Flyable> flyablesList = new ArrayList<>();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         System.out.println("Scanning Simulations File");
 
         if (args.length != 1) {
@@ -24,10 +21,13 @@ public class Simulator {
             return;
         }
 
+        //clears file first
+        PrintWriter pw = new PrintWriter("simulation.txt");
+        pw.close();
 
         // The name of the file to open.
         // In this case the first argument in java starts at [0]
-        System.out.println(args[0]);
+        System.out.println("Reading from file: " + args[0]);
         String fileName = args[0];
 
         try {
@@ -35,14 +35,14 @@ public class Simulator {
             String line = reader.readLine();
             if (line != null) {
                 weatherTower = new WeatherTower();
-                System.out.println("New WeatherTower: " + weatherTower);
+                //System.out.println("New WeatherTower: " + weatherTower);
 
                 int simulations = Integer.parseInt(line.split(" ")[0]);
                 if (simulations < 0) {
-                    System.out.println("Simulation count " + simulations + " invalid.");
+                    //System.out.println("Simulation count " + simulations + " invalid.");
                     System.exit(1);
                 }
-                System.out.println("Simulation count " + simulations);
+                //System.out.println("Simulation count " + simulations);
 
                 while ((line = reader.readLine()) != null) {
                     Flyable flyable = AircraftFactory.newAircraft(
@@ -52,7 +52,7 @@ public class Simulator {
                             Integer.parseInt(line.split(" ")[3]),
                             Integer.parseInt(line.split(" ")[4]));
                     flyablesList.add(flyable);
-                    System.out.println(flyablesList);
+                    //System.out.println(flyablesList);
                 }
 
                 for (Flyable flyable : flyablesList) {
@@ -81,8 +81,7 @@ public class Simulator {
                     "Choose a simulation file"
             );
         } finally {
-            //Logger.getLogger().close();
-            System.out.println("Operation ended");
+            System.out.println("Simulations ended.");
         }
     }
 }
