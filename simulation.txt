@@ -2,39 +2,27 @@
 Tower -> Baloon#B1(1) has registered to a weather tower.
 Tower -> Baloon#B2(2) has registered to a weather tower.
 Tower -> Baloon#B2(3) has registered to a weather tower.
-Simulation # 1
-Baloon#B1(1): Pack some shades boys, sun's out!
-Baloon#B2(2): Pack some shades boys, sun's out!
-Baloon#B2(3): RAIN! We're losing height!
-Tower -> Baloon#B2(3) has landed and unregistered.
-Simulation # 2
-Baloon#B1(1): Fiddlesticks. This damn fog makes flying hard.
-Baloon#B2(2): Fiddlesticks. This damn fog makes flying hard.
-Simulation # 3
-Baloon#B1(1): Fiddlesticks. This damn fog makes flying hard.
-Baloon#B2(2): RAIN! We're losing height!
-Simulation # 4
-Baloon#B1(1): Pack some shades boys, sun's out!
-Baloon#B2(2): Pack some shades boys, sun's out!
-Simulation # 5
-Baloon#B1(1): Pack some shades boys, sun's out!
-Baloon#B2(2): Pack some shades boys, sun's out!
-Tower -> Baloon#B1(1) has registered to a weather tower.
-Tower -> Baloon#B2(2) has registered to a weather tower.
-Tower -> Baloon#B2(3) has registered to a weather tower.
+Tower -> Helicopter#H1(4) has registered to a weather tower.
+Tower -> Helicopter#H2(5) has registered to a weather tower.
 Simulation # 1
 Baloon#B1(1): Winter has come!
-Baloon#B2(2): RAIN! We're losing height!
-Baloon#B2(3): Pack some shades boys, sun's out!
+Baloon#B2(2): Fiddlesticks. This damn fog makes flying hard.
+Baloon#B2(3): Fiddlesticks. This damn fog makes flying hard.
+Tower -> Baloon#B2(3) has landed and unregistered.
+Helicopter#H1(4): I ain't afraid of no fog.
+Helicopter#H2(5): Gotta de-ice the rotors!
+Tower -> Helicopter#H2(5) has landed and unregistered.
 Simulation # 2
 Baloon#B1(1): RAIN! We're losing height!
 Tower -> Baloon#B1(1) has landed and unregistered.
-Baloon#B2(2): Fiddlesticks. This damn fog makes flying hard.
-Baloon#B2(3): Winter has come!
-Tower -> Baloon#B2(3) has landed and unregistered.
+Baloon#B2(2): RAIN! We're losing height!
+Helicopter#H1(4): Gotta de-ice the rotors!
 Simulation # 3
 Baloon#B2(2): Pack some shades boys, sun's out!
+Helicopter#H1(4): I ain't afraid of no fog.
 Simulation # 4
-Baloon#B2(2): RAIN! We're losing height!
-Simulation # 5
 Baloon#B2(2): Pack some shades boys, sun's out!
+Helicopter#H1(4): Getting rain on my choppers.
+Simulation # 5
+Baloon#B2(2): RAIN! We're losing height!
+Helicopter#H1(4): I ain't afraid of no fog.
