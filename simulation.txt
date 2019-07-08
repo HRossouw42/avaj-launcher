@@ -9,41 +9,44 @@ Tower -> JetPlane#J2(8) has registered to a weather tower.
 Tower -> JetPlane#J3(9) has registered to a weather tower.
 Simulation # 1
 Baloon#B1(1): Fiddlesticks. This damn fog makes flying hard.
-Baloon#B2(2): Pack some shades boys, sun's out!
-Baloon#B2(3): Winter has come!
+Baloon#B2(2): Winter has come!
+Baloon#B2(3): RAIN! We're losing height!
 Tower -> Baloon#B2(3) has landed and unregistered at coordinates: LONG12 LAT16
 Helicopter#H1(4): I ain't afraid of no fog.
 Helicopter#H2(5): I ain't afraid of no fog.
-Helicopter#H3(6): Gotta de-ice the rotors!
-JetPlane#J1(7): Santa's come early boys.
-JetPlane#J2(8): Sun's out, tactical missiles out
-JetPlane#J3(9): Santa's come early boys.
-Tower -> JetPlane#J3(9) has landed and unregistered at coordinates: LONG11 LAT99
+Helicopter#H3(6): Praise the sun! We're going long.
+JetPlane#J1(7): Foggy skies ahead.
+JetPlane#J2(8): Santa's come early boys.
+JetPlane#J3(9): Eagles don't care about no rain
 Simulation # 2
-Baloon#B1(1): Fiddlesticks. This damn fog makes flying hard.
-Baloon#B2(2): Winter has come!
+Baloon#B1(1): Winter has come!
+Baloon#B2(2): RAIN! We're losing height!
 Helicopter#H1(4): Getting rain on my choppers.
 Helicopter#H2(5): Gotta de-ice the rotors!
 Tower -> Helicopter#H2(5) has landed and unregistered at coordinates: LONG655 LAT33
 Helicopter#H3(6): Gotta de-ice the rotors!
-Tower -> Helicopter#H3(6) has landed and unregistered at coordinates: LONG654 LAT3
-JetPlane#J1(7): Foggy skies ahead.
+JetPlane#J1(7): Sun's out, tactical missiles out
 JetPlane#J2(8): Sun's out, tactical missiles out
+JetPlane#J3(9): Sun's out, tactical missiles out
 Simulation # 3
-Baloon#B1(1): Fiddlesticks. This damn fog makes flying hard.
-Baloon#B2(2): Winter has come!
-Helicopter#H1(4): I ain't afraid of no fog.
-JetPlane#J1(7): Foggy skies ahead.
-JetPlane#J2(8): Eagles don't care about no rain
-Simulation # 4
 Baloon#B1(1): Pack some shades boys, sun's out!
 Baloon#B2(2): Fiddlesticks. This damn fog makes flying hard.
 Helicopter#H1(4): I ain't afraid of no fog.
-JetPlane#J1(7): Eagles don't care about no rain
+Helicopter#H3(6): Gotta de-ice the rotors!
+Tower -> Helicopter#H3(6) has landed and unregistered at coordinates: LONG664 LAT3
+JetPlane#J1(7): Sun's out, tactical missiles out
 JetPlane#J2(8): Santa's come early boys.
+JetPlane#J3(9): Santa's come early boys.
+Tower -> JetPlane#J3(9) has landed and unregistered at coordinates: LONG11 LAT114
+Simulation # 4
+Baloon#B1(1): Pack some shades boys, sun's out!
+Baloon#B2(2): Winter has come!
+Helicopter#H1(4): Gotta de-ice the rotors!
+JetPlane#J1(7): Sun's out, tactical missiles out
+JetPlane#J2(8): Eagles don't care about no rain
 Simulation # 5
 Baloon#B1(1): Fiddlesticks. This damn fog makes flying hard.
-Baloon#B2(2): Pack some shades boys, sun's out!
+Baloon#B2(2): RAIN! We're losing height!
 Helicopter#H1(4): Gotta de-ice the rotors!
-JetPlane#J1(7): Foggy skies ahead.
-JetPlane#J2(8): Foggy skies ahead.
+JetPlane#J1(7): Eagles don't care about no rain
+JetPlane#J2(8): Eagles don't care about no rain
