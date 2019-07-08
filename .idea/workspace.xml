@@ -4,19 +4,12 @@
     <list default="true" id="ec572524-9bbc-4037-a8a4-a770774775b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/harmun_coil.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/harmun_coil.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/G1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/good_tests/G1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/good_tests/G1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/good_tests/G2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/good_tests/G3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/good_tests/G4.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/simulation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/simulation.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/launcher/simulator/Logger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/launcher/simulator/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/launcher/simulator/Simulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/launcher/simulator/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/launcher/simulator/Tower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/launcher/simulator/vehicles/AircraftFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/launcher/simulator/vehicles/AircraftFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/launcher/simulator/vehicles/Baloon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/launcher/simulator/vehicles/Baloon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/launcher/simulator/vehicles/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/launcher/simulator/vehicles/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/launcher/simulator/vehicles/Helicopter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/launcher/simulator/vehicles/Helicopter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/launcher/simulator/vehicles/JetPlane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/launcher/simulator/vehicles/JetPlane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/launcher/weather/WeatherProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/launcher/weather/WeatherProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/launcher/weather/WeatherTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/launcher/weather/WeatherTower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/G1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/G1.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/launcher/simulator/Simulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="-51">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/launcher/simulator/vehicles/Helicopter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="20" column="131" selection-start-line="20" selection-start-column="131" selection-end-line="20" selection-end-column="131" />
+            <state relative-caret-position="112">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -363,7 +356,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14469914" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -376,12 +368,12 @@
       <window_info anchor="bottom" id="Dependency Viewer" show_stripe_button="false" weight="0.32960895" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32914925" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2626506" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26176116" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4973262" weight="0.32914925" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49331552" weight="0.25244072" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49331552" visible="true" weight="0.25180724" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5066845" side_tool="true" weight="0.32914925" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.31854838" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4986631" weight="0.32402235" />
@@ -454,7 +446,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/good_tests/G1.txt">
+    <entry file="file://$PROJECT_DIR$/tests/G1.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/launcher/simulator/vehicles/Aircraft.java">
@@ -537,16 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/launcher/simulator/Simulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/launcher/simulator/vehicles/Baloon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -567,8 +549,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/launcher/simulator/vehicles/Helicopter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="20" column="131" selection-start-line="20" selection-start-column="131" selection-end-line="20" selection-end-column="131" />
+        <state relative-caret-position="112">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/launcher/simulator/Simulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
